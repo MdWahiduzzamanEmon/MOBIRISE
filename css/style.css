@@ -65,6 +65,7 @@ a{
     background-image: url(img/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment:fixed;
     background-size:cover;
     position: relative;
     z-index: 2;
@@ -343,3 +344,73 @@ progress::-moz-progress-bar {
 .client h4{
     font-weight: 400;
 }
+
+/* project image section */
+.my-pr{
+    margin-bottom: 1.875rem;
+}
+.project-header-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5625rem 0;
+}
+.project-header-flex h2{
+    font-size: 3rem;
+}
+.project-header-flex button{
+    color: var(--text-color);
+    background-color: var(--button-bg-color);
+    border: none;
+    padding: .625rem 1.1875rem;
+    font-size: 1.125rem;
+    border-radius: .125rem;
+    margin-top: 3.125rem;
+}
+.project-header-flex button:hover{
+    background-color:#6C1A20;
+    transition: ease .4s all;
+    -webkit-transition: ease .4s all;
+    -moz-transition: ease .4s all;
+    -ms-transition: ease .4s all;
+    -o-transition: ease .4s all;
+    cursor: pointer;
+}
+.img-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.img-flex img{
+    width:21.75rem;
+    border-radius: .625rem;
+    -webkit-border-radius: .625rem;
+    -moz-border-radius: .625rem;
+    -ms-border-radius: .625rem;
+    -o-border-radius: .625rem;
+}
+.img-flex h2{
+    color: #595a69;
+    font-size: 2rem;
+    width: 21.75rem;
+    height: 7.5rem;
+    padding: 1.25rem 0;
+}
+
+.read-More,.arrow{
+     color: var(--slider-bg-color);
+     font-weight: bold;
+     margin-right: .3125rem;
+     opacity: 0;
+     visibility: hidden;
+     transition: .5s ease all;
+     -webkit-transition: .5s ease all;
+     -moz-transition: .5s ease all;
+     -ms-transition: .5s ease all;
+     -o-transition: .5s ease all;
+}
+.hidden:hover .read-More,.hidden:hover .arrow{
+    opacity:1;
+    visibility: visible;
+    
+}
+
+
