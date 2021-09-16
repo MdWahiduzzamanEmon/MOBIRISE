@@ -201,12 +201,12 @@ a{
     display: block;
     margin: 5px 0px;
 }
+/* progresss design  */
 progress {
   border: none;
   width: 600px;
   height: 5px;
   border-radius: 50%;
-  background: crimson;
   margin: 20px 0px;
 }
 
@@ -220,4 +220,51 @@ progress::-webkit-progress-value {
 
 progress::-moz-progress-bar {
   background: var(--header-bg-color);
+}
+
+/* experience section  */
+
+.experince-section{
+    background-color: var(--heading-name-text-color);
+    color: var(--text-color);
+    height: 48.125rem;
+}
+.experince-section h2{
+    font-size: 3rem;
+    padding: 3.125rem 0;
+}
+.ex-flex{
+    display: flex;
+    border-bottom: .125rem solid var(--progress-p-color);
+    padding: 2.1875rem 0;
+}
+.ex-flex:nth-child(4){
+    border: none;
+}
+.year-width,.sub-width{
+    width: 23%
+}
+.sub-width h3{
+    line-height: 2;
+}
+.details-text{
+    width: 48%;
+}
+.downlod-r-btn{
+    color: var(--text-color);
+    background-color: var(--button-bg-color);
+    border: none;
+    padding: .625rem 1.1875rem;
+    font-size: 1.125rem;
+    border-radius: .125rem;
+    margin-top: 3.125rem;
+}
+.downlod-r-btn:hover{
+    background-color:#6C1A20;
+    transition: ease .4s all;
+    -webkit-transition: ease .4s all;
+    -moz-transition: ease .4s all;
+    -ms-transition: ease .4s all;
+    -o-transition: ease .4s all;
+    cursor: pointer;
 }
