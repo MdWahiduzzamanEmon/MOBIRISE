@@ -61,7 +61,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 37.5rem;
+    height: 44rem;
     background-image: url(img/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -82,21 +82,24 @@ a{
 }
 .display-flex h5{
     font-size:  1.25rem;
-    margin-left:3.4375rem ;
+    margin-left:12.5rem ;
     padding: .9375rem 0;
 }
 .display-flex h1{
     font-size:  4rem;
     width:34.375rem ;
-    margin-left:3.4375rem ;
+    margin-left:12.5rem ;
     padding: .9375rem 0;
 }
 .display-flex div{
-    margin-left: 1.875rem;
+    margin-left: 6.5rem;
     padding-top: .9375rem;
     padding-bottom: .9375rem;
     display: flex;
     
+}
+.display-flex div:nth-child(2){
+    margin-left: 1.5625rem;
 }
 .display-flex a{
     color: var(--text-color);
@@ -157,4 +160,64 @@ a{
     line-height: 1.5;
     margin-left: .625rem;
     font-size:18px;
+}
+
+/* progress bar section  */
+
+.grid-item{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* align-items: center; */
+    padding: 5rem 0;
+}
+.img-div{
+    width: 80%;
+}
+.grid-item h3{
+    font-size: 2rem;
+    padding-bottom: .375rem;
+}
+.grid-item h3>span{
+    color: #b22b35;
+}
+.grid-item h3>span:hover{
+    color:var(--header-bg-color);
+    transition: .4s ease all;
+    -webkit-transition: .4s ease all;
+    -moz-transition: .4s ease all;
+    -ms-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    cursor: pointer;
+}
+.grid-item p{
+    color: var(--progress-p-color);
+    padding: 2.1875rem 0;
+    width: 80%;
+    line-height: 2;
+}
+.grid-item label{
+    font-size: 1.25rem;
+    font-weight: bolder;
+    display: block;
+    margin: 5px 0px;
+}
+progress {
+  border: none;
+  width: 600px;
+  height: 5px;
+  border-radius: 50%;
+  background: crimson;
+  margin: 20px 0px;
+}
+
+progress {
+  background: var(--header-bg-color);
+}
+
+progress::-webkit-progress-value {
+  background: var(--header-bg-color);
+}
+
+progress::-moz-progress-bar {
+  background: var(--header-bg-color);
 }
