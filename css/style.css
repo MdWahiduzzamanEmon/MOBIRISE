@@ -44,7 +44,7 @@ a{
     list-style: none;
 }
 .list-item,.header-logo{
-    padding: 1.25rem;
+    padding: 1.6875rem;
     color: var(--text-color);
 }
 .list-item:hover,.header-logo:hover{
