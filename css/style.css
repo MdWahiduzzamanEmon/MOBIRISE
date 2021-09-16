@@ -1,3 +1,57 @@
-body{
+/* common css */
+:root{
+    --button-bg-color:#b22b35;
+    --header-bg-color:#9A0712;
+    --slider-bg-color:#941D25;
+    --progress-text-color:#0055A5;
+    --progress-p-color:#6C6F6E;
+    --text-color:#fff;
+    --heading-name-text-color:#000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
     font-family: 'Inter', sans-serif;
+}
+img{
+    width: 100%;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+.container{
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* header-section  */
+.h-color{
+    background-color: var(--header-bg-color);
+    color: var(--text-color);
+    height: 10vh;
+}
+.flex-item{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+.ul-flex{
+    display: flex;
+    list-style: none;
+}
+.list-item,.header-logo{
+    padding: 1.25rem;
+    color: var(--text-color);
+}
+.list-item:hover,.header-logo:hover{
+    color:rgb(165, 159, 159);
+    transition:.4s all;
+    -webkit-transition:.4s all;
+    -moz-transition:.4s all;
+    -ms-transition:.4s all;
+    -o-transition:.4s all;
 }
