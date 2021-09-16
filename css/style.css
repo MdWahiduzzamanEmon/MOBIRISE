@@ -62,7 +62,7 @@ a{
     flex-direction: column;
     justify-content: center;
     height: 37.5rem;
-    background-image: url(/img/background.jpg);
+    background-image: url(img/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -123,7 +123,7 @@ a{
 .h-line p{
     width: 5rem;
     height: .125rem;
-    margin-top: .625rem;
+    margin-top: .375rem;
     background-color: #fff;
 
 }
