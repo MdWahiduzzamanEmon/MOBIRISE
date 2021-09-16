@@ -172,7 +172,35 @@ a{
 }
 .img-div{
     width: 80%;
+    /* position: relative; */
 }
+.img{
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+}
+
+/* image overly  */
+.img-overly{
+    position: absolute;
+    background-color:#b22b35;
+    opacity: .5;
+    bottom: -100%;
+    width: 80%;
+    height: 50%;
+    left:0 ;
+}
+.img-overly h2{
+    color: #000;
+    text-align: center;
+    padding: 20% 0;
+}
+.img:hover .img-overly{
+    bottom: 78px;
+    transition:.8s all ease-in-out ;
+}
+
+
 .grid-item h3{
     font-size: 2rem;
     padding-bottom: .375rem;
@@ -267,4 +295,21 @@ progress::-moz-progress-bar {
     -ms-transition: ease .4s all;
     -o-transition: ease .4s all;
     cursor: pointer;
+}
+
+/* project-section  */
+
+.project-section{
+    text-align: center;
+}
+.project-section h1{
+    font-size: 3rem;
+    padding: 3.75rem 0;
+}
+.project-section>img{
+    border-radius: .625rem;
+}
+
+.project-section>p{
+    padding: .625rem 0;
 }
